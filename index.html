@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -1068,10 +1069,70 @@
         </div>
       </div>
     </section>
+    <section class="about-us section-offset">
+      <div class="container about-us__container">
+        <div class="about-us__top flex">
+          <div class="about-us__text">
+            <h2 class="about-us__title">О нас</h2>
+            <p class="about-us__descr first-descr">
+              Приём-приём! Как слышно? Мы уже в эфире? Отлично, поехали!
+            </p>
+            <p class="about-us__descr second-descr">
+              Друзья, мы будем очень рады, если вы поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы можете поделиться обратной связью о наших предеачах, темах, подборках и вообще обо всём! Это можно сделать либо написав нам в форме ниже, либо кликнув на наши соцсети в подвале сайта. Спасибо! Услышимся!:)
+            </p>
+          </div>
+          <div class="about-us__right-body flex">
+            <div class="about-us__first-svg"></div>
+            <div class="about-us__second-svg"></div>
+          </div>
+        </div>
+        <div class="about-us__swiper swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/about-us-1.jpg" alt="" class="swiper__img">
+              <h3 class="swiper__name">Дмитрий Гутенберг</h3>
+              <p class="swiper__descr">Эксперт (ну, почти) по всем вопросам (почти)</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/about-us-2.jpg" alt="" class="swiper__img">
+              <h3 class="swiper__name">Анна Васильева</h3>
+              <p class="swiper__descr">Как я здесь оказалась? А главное — зачем?</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/about-us-3.jpg" alt="" class="swiper__img">
+              <h3 class="swiper__name">Пётр Дмитриевский</h3>
+              <p class="swiper__descr">Господа! Внимание! Благодарю за внимание!/p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/about-us-4.jpg" alt="" class="swiper__img">
+              <h3 class="swiper__name">Татьяна Флеганова</h3>
+              <p class="swiper__descr">Одна я в пальто стою красивая, а вокруг…</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/about-us-5.jpg" alt="" class="swiper__img">
+              <h3 class="swiper__name">Фёдор Прокопьев</h3>
+              <p class="swiper__descr">Привет! Я фотограф, музыкант, ведущий</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/about-us-6.jpg" alt="" class="swiper__img">
+              <h3 class="swiper__name">Светлана Кортнева</h3>
+              <p class="swiper__descr">Художник-оформитель. Оформляю</p>
+            </div>
+            ...
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
 
   </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 <script src="js/script.js"></script>

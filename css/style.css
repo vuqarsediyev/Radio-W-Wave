@@ -879,3 +879,88 @@ color: var(--text_gray);
   line-height: 100%;
   color: var(--promo_color);
 }
+
+/*about-us*/
+
+.about-us {
+  background-color: var(--black);
+}
+
+.about-us__top {
+  margin-bottom: var(--gap);
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color: var(--white);
+}
+
+.about-us__descr {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--text_gray)
+}
+
+.first-descr {
+  margin-bottom: 8px;
+}
+
+.second-descr {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.about-us__text {
+  margin-right: var(--gap);
+}
+
+.about-us__first-svg {
+  width: 160px;
+  min-height: 290px;
+  margin-right: var(--gap);
+  background-image: url(../img/Spiral\ 3.svg);
+  background-position: center;
+  background-size: 160px 290px;
+  background-repeat: no-repeat;
+}
+
+.about-us__second-svg {
+  width: 255px;
+  min-height: 255px;
+  background-image: url(../img/Dawn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 255px 255px;
+}
+
+.swiper__img {
+  margin-bottom: var(--gap);
+}
+
+.swiper__name {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.swiper__descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text_gray);
+}
+
+.about-us__swiper {
+  margin-bottom: var(--gap);
+}

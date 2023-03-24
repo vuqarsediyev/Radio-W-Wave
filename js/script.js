@@ -10,3 +10,18 @@ const choices = new Choices(element, {
 //Guest Accordion
 
 new Accordion('.js-accordion-container');
+
+//Swiper
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
