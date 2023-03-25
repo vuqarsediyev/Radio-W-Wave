@@ -97,6 +97,27 @@ body {
 
 /*Header*/
 
+.header {
+  position: relative;
+}
+
+.header::after  {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: var(--light_color);
+}
+
+.header::before {
+  position: absolute;
+  content: '';
+  top: 80px;
+  height: 1px;
+  width: 100%;
+  background-color: var(--light_color);
+}
+
 .header__top {
   align-items: center;
 }
@@ -135,14 +156,49 @@ body {
   margin-right: 27px;
 }
 
+.bottom-menu__list {
+  align-items: center;
+}
+
 .bottom-menu__item:not(:last-child) {
   margin-right: 52px;
 }
 
 .bottom-menu__item:last-child {
-  margin-right: 95px;
+  margin-right: 75px;
 }
 
+.bottom-menu__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color:var(--black)
+}
+
+.bottom-menu__link span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--text_gray);
+}
+
+.bottom-menu__svg {
+  margin-right: 10px;
+  width: 32px;
+  height: 20px;
+}
+
+.bottom-menu__item:nth-child(7) {
+  padding-left: 12px;
+  border-left: 1px solid #E6E8EC;
+}
+
+.bottom-menu__item:nth-child(8) {
+  padding-right: 20px;
+  padding-left: 12px;
+  border-left: 1px solid #E6E8EC;
+  border-right: 1px solid #E6E8EC;
+}
 /*Hero*/
 
 
