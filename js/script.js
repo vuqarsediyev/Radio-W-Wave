@@ -24,7 +24,7 @@ tabsLink.forEach(function(element) {
     e.currentTarget.classList.add('guests__bio-link--active');
 
     tabsItem.forEach(function(element){element.classList.remove('guests__right--active')});
-    document.querySelector(`[data-target="${path}"]`).classList.add('guests__right--active')
+    document.querySelector(`[data-target="${path}"]`).classList.add('guests__right--active');
 
   })
 })
