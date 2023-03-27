@@ -123,9 +123,29 @@ body {
 }
 
 .login__btn {
+  text-align: center;
   padding: 9px 32px;
-  border:2px solid var(--black);
+  outline: 2px solid var(--black);
   border-radius: 77px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.login__btn:focus-visible {
+  outline: none;
+  background-color: var(--primary_light);
+}
+
+.login__btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.login__btn:active {
+  background-color: var(--primary_shade);
+  outline: none;
+  color: var(--white);
 }
 
 .nav__list {
@@ -140,6 +160,21 @@ body {
   line-height: 20px;
 }
 
+.nav-link:focus-visible {
+  outline: none;
+  padding: 4px 10px;
+  background-color: var(--primary_light);
+  color: var(--white);
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link:active {
+  color: var(--primary_shade);
+}
+
 .header__logo {
   margin-right: auto;
 }
@@ -152,9 +187,37 @@ body {
   margin-right: 85px;
 }
 
-.searchbar__icon {
+.searchbar {
   margin-right: 21px;
 }
+
+.searchbar:focus-visible {
+  outline: none;
+}
+
+.searchbar:focus-visible .searchbar__icon path {
+  outline: none;
+  stroke: var(--primary_light);
+}
+
+.searchbar:hover .searchbar__icon path {
+  outline: none;
+  stroke: var(--primary_light);
+}
+
+.searchbar:active .searchbar__icon path {
+  outline: none;
+  stroke: var(--primary_shade);
+}
+
+.searchbar::after {
+  
+}
+
+.searchbar__icon path {
+  stroke: var(--primary);
+}
+
 
 .bottom-menu__list {
   align-items: center;
@@ -179,7 +242,23 @@ body {
   color:var(--black)
 }
 
+.bottom-menu__link:focus-visible {
+  outline: none;
+  padding: 3px 5.5px 1px 5.5px;
+  background-color: var(--primary_light);
+  color: var(--white);
+}
+
+.bottom-menu__link:hover {
+  color: var(--primary);
+}
+
+.bottom-menu__link:active {
+  color: var(--primary_shade);
+}
+
 .bottom-menu__link p {
+  white-space: nowrap;
   margin: 0;
   margin-bottom: 5px;
   font-weight: 400;
@@ -207,8 +286,12 @@ body {
   border-left: 1px solid #E6E8EC;
   border-right: 1px solid #E6E8EC;
 }
-/*Hero*/
 
+
+
+
+
+/*Hero*/
 
 .hero__title {
   margin: 0;
@@ -243,6 +326,21 @@ body {
   font-size: 20px;
   line-height: 20px;
 }
+
+.hero__btn:focus-visible {
+  outline: none;
+  outline: 2px solid var(--primary_shade);
+  background-color: var(--primary_light);
+}
+
+.hero__btn:hover {
+  background-color: var(--primary_light);
+}
+
+.hero__btn:active {
+  background-color: var(--primary_shade);
+}
+
 .hero__right {
   display: flex;
   align-items: center;
@@ -400,6 +498,23 @@ body {
   line-height: 20px;
   text-align: center;
   color: #6D31EE;
+}
+
+.podcasts__btn:focus-visible {
+  outline: none;
+  outline: 2px solid var(--primary_shade);
+  background-color: var(--primary_light);
+  color: var(--white);
+}
+
+.podcasts__btn:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.podcasts__btn:active {
+  background-color: var(--primary_shade);
+  color: var(--white);
 }
 
 /*broadcasts*/
