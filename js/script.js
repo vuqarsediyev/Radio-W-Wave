@@ -1,3 +1,15 @@
+//Searchbar
+const searchbarBtn = document.querySelector('.searchbar');
+const searchForm = document.querySelector('.header__form');
+
+searchbarBtn.addEventListener('click', function() {
+  searchForm.classList.toggle('header__form--active');
+  searchbarBtn.classList.toggle('searchbar--hide');
+})
+
+
+//
+
 const element = document.querySelector('.broadcasts__select');
 const choices = new Choices(element, {
     searchChoices: false,

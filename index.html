@@ -26,12 +26,23 @@
             <li class="nav__item"><a href="" class="nav-link">О нас</a></li>
           </ul>
         </nav>
-        <button class="btn-reset searchbar">
-          <svg class="searchbar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M20.9999 21L16.6499 16.65" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>            
-        </button>
+        <div class="header__wrapper">
+          <button class="btn-reset searchbar">
+            <svg class="searchbar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20.9999 21L16.6499 16.65" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>            
+          </button>
+          <form action="" class="header__form flex">
+            <input type="text" placeholder="Поиск по сайту" class="searchbar__input">
+            <button class="btn-reset searchbar">
+              <svg class="searchbar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.9999 21L16.6499 16.65" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>            
+            </button>
+          </form>
+        </div>
         <div class="header__login login">
           <button class="btn btn-reset login__btn">Вход</button>
         </div>
@@ -45,18 +56,22 @@
           <li class="bottom-menu__item"><a href="" class="bottom-menu__link">Рейтинги</a></li>
           <li class="bottom-menu__item"><a href="" class="bottom-menu__link">Реклама</a></li>
           <li class="bottom-menu__item flex">
-            <svg class="bottom-menu__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
-            </svg>  
+            <button class="btn-reset header__play-btn">
+              <svg class="bottom-menu__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="none"/>
+              </svg>  
+            </button> 
             <a href="" class="bottom-menu__link">
-            <p>Ранее в эфире</p> &laquo;Музыка&raquo;
+            <span>Ранее в эфире</span> &laquo;Музыка&raquo;
           </a></li>
           <li class="bottom-menu__item flex">
-            <svg class="bottom-menu__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
-            </svg>  
+            <button class="btn-reset header__play-btn">
+              <svg class="bottom-menu__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="none"/>
+              </svg>  
+            </button>
             <a href="" class="bottom-menu__link">
-            <p>Сейчас в эфире</p> &laquo;Как так?&raquo;
+            <span>Сейчас в эфире</span> &laquo;Как так?&raquo;
           </a></li>
         </ul>
         <img src="img/12+.jpg" alt="Контент для 12+ возрастное ограничение" class="bottom-menu__img">
@@ -98,10 +113,10 @@
                   <button class="btn-reset podcasts__play">
                     <svg  width="48" height="48" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <circle cx="24" cy="24" r="20" stroke="none" stroke-width="2" />
                     <path
                       d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
-                      fill="#A1A6B4" />
+                      fill="none" />
                   </svg>
                   </button>
                 </div>
@@ -539,7 +554,7 @@
     <section class="broadcasts section-offset">
       <div class="container broadcasts__container">
         <ul class="broadcasts__list flex list-reset">
-          <li class="broadcasts__item flex">
+          <li class="broadcasts__item flex" tabindex="0">
             <h2 class="broadcasts__title">Передачи</h2>
             <form class="broadcasts__form flex" action="">
               <label for="select"> Автор:</label>
@@ -551,59 +566,83 @@
               </select>
             </form>
           </li>
-          <li class="broadcasts__item flex">
+          <li class="broadcasts__item flex" tabindex="0">
             <img src="img/broadcast-1.jpg" alt="" class="broadcasts__img">
             <div class="broadcasts__text">
               <h3 class="broadcasts__name">О людях и книгах</h3>
               <p class="broadcasts__descr">Анонсируется отдельно</p>
-              <a href="" class="broadcasts__link">Подробнее</a>
+              <a href="" class="broadcasts__link">Подробнее
+                <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="none"/>
+                </svg>
+              </a>
             </div>
           </li>
-          <li class="broadcasts__item flex">
+          <li class="broadcasts__item flex" tabindex="0">
             <img src="img/broadcast-2.jpg" alt="" class="broadcasts__img">
             <div class="broadcasts__text">
               <h3 class="broadcasts__name">Графомания td</h3>
               <p class="broadcasts__descr">По понедельникам в 10:00</p>
-              <a href="" class="broadcasts__link">Подробнее</a>
+              <a href="" class="broadcasts__link">Подробнее
+                <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="none"/>
+                </svg>
+              </a>
             </div>
           </li>
-          <li class="broadcasts__item flex">
+          <li class="broadcasts__item flex" tabindex="0">
             <img src="img/broadcast-3.jpg" alt="" class="broadcasts__img">
             <div class="broadcasts__text">
               <h3 class="broadcasts__name">Не Рим, не Троя</h3>
               <p class="broadcasts__descr">По вторникам в 12:00</p>
-              <a href="" class="broadcasts__link">Подробнее</a>
+              <a href="" class="broadcasts__link">Подробнее
+                <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="none"/>
+                </svg>
+              </a>
             </div>
           </li>
-          <li class="broadcasts__item flex">
+          <li class="broadcasts__item flex" tabindex="0">
             <img src="img/broadcast-mic.jpg" alt="" class="broadcasts__mic">
             <button class="btn-reset broadcasts__btn">Архив</button>
             <span class="broadcasts__btn-descr">
               В архив попадают все передачи, которые вы пропустили! Enjoy:)
             </span>
           </li>
-          <li class="broadcasts__item flex">
+          <li class="broadcasts__item flex" tabindex="0">
             <img src="img/broadcast-4.jpg" alt="" class="broadcasts__img">
             <div class="broadcasts__text">
               <h3 class="broadcasts__name">Эрудит</h3>
               <p class="broadcasts__descr">По пятницам в 17:00</p>
-              <a href="" class="broadcasts__link">Подробнее</a>
+              <a href="" class="broadcasts__link">Подробнее
+                <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="none"/>
+                </svg>
+              </a>
             </div>
           </li>
-          <li class="broadcasts__item flex">
+          <li class="broadcasts__item flex" tabindex="0">
             <img src="img/broadcast-5.jpg" alt="" class="broadcasts__img">
             <div class="broadcasts__text">
               <h3 class="broadcasts__name">Тонкости эпох</h3>
               <p class="broadcasts__descr">По субботам в 10:00</p>
-              <a href="" class="broadcasts__link">Подробнее</a>
+              <a href="" class="broadcasts__link">Подробнее
+                <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="none"/>
+                </svg>
+              </a>
             </div>
           </li>
-          <li class="broadcasts__item flex">
+          <li class="broadcasts__item flex" tabindex="0">
             <img src="img/broadcast-6.jpg" alt="" class="broadcasts__img">
             <div class="broadcasts__text">
               <h3 class="broadcasts__name">Живые мысли</h3>
               <p class="broadcasts__descr">По воскресеньям в 15:30</p>
-              <a href="" class="broadcasts__link">Подробнее</a>
+              <a href="" class="broadcasts__link">Подробнее
+                <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="none"/>
+                </svg>
+              </a>
             </div>
           </li>
         </ul>
@@ -624,7 +663,7 @@
                   <h3 class="guests__link">
                     Блогеры
                   </h3>
-                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="guests-svg" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                     <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                     </svg>
@@ -654,7 +693,7 @@
                   <h3 class="guests__link">
                     Арт-критики
                   </h3>
-                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="guests-svg" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                     <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                     </svg>
@@ -687,7 +726,7 @@
                   <h3 class="guests__link">
                     Художники
                   </h3>
-                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="guests-svg" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                     <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                     </svg>
@@ -720,7 +759,7 @@
                   <h3 class="guests__link">
                     Люди науки
                   </h3>
-                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="guests-svg" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                     <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                     </svg>
@@ -753,7 +792,7 @@
                   <h3 class="guests__link">
                     Историки
                   </h3>
-                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="guests-svg" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                     <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                     </svg>
@@ -786,7 +825,7 @@
                   <h3 class="guests__link">
                     Филологи
                   </h3>
-                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="guests-svg" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                     <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                     </svg>
@@ -919,42 +958,42 @@
 
             <p class="check__title">Жанр</p>
         
-            <label class="check__container">Постпанк
+            <label class="check__container" tabindex="0">Постпанк
               <input class="check-input" type="checkbox" checked="checked">
               <span class="checkmark"></span>
             </label>
         
-            <label class="check__container">Хардкор
+            <label class="check__container" tabindex="0">Хардкор
               <input class="check-input" type="checkbox">
               <span class="checkmark"></span>
             </label>
         
-            <label class="check__container">Панк-рок
+            <label class="check__container" tabindex="0">Панк-рок
               <input class="check-input" type="checkbox">
               <span class="checkmark"></span>
             </label>
         
-            <label class="check__container">Рок
+            <label class="check__container" tabindex="0">Рок
               <input class="check-input" type="checkbox">
               <span class="checkmark"></span>
             </label>
         
-            <label class="check__container">Прогрессивный рок
+            <label class="check__container" tabindex="0">Прогрессивный рок
               <input class="check-input" type="checkbox">
               <span class="checkmark"></span>
             </label>
         
-            <label class="check__container">Электронная музыка
+            <label class="check__container" tabindex="0">Электронная музыка
               <input class="check-input" type="checkbox">
               <span class="checkmark"></span>
             </label>
                     
-            <label class="check__container">Электронная музыка
+            <label class="check__container" tabindex="0">Электронная музыка
               <input class="check-input" type="checkbox">
               <span class="checkmark"></span>
             </label>
                     
-            <label class="check__container">Звуки природы и шум города
+            <label class="check__container" tabindex="0">Звуки природы и шум города
               <input class="check-input" type="checkbox">
               <span class="checkmark"></span>
             </label>
