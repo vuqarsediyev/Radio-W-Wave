@@ -925,7 +925,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 30px;
-  padding: 23px 0;
+  padding: 28px 0;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease;
