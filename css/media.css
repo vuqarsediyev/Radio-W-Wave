@@ -1,0 +1,146 @@
+@media (max-width: 1140px) {
+
+  .footer__line {
+    display: none;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__logo-top {
+    margin-left: 15px;
+    display: flex;
+    padding: 23px 0;
+  }
+  .header__img {
+    background-color: #F2F2F2;;
+  }
+
+  .header::before {
+    top: 140px;
+  }
+
+  .nav__item:last-child {
+    margin-right: 37px;
+  }
+
+  .bottom-menu__item:not(:last-child) {
+    padding: 22px 0;
+    margin-right: 30px;
+  }
+
+  .bottom-menu__item:nth-child(7) {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 8px;
+}
+
+  .bottom-menu__item:last-child {
+    margin-right: 0;
+  }
+
+  .bottom-menu__item:nth-child(8) {
+    padding-right: 11px;
+}
+
+  .bottom-menu__img {
+    display: none;
+  }
+
+  .hero__descr {
+    padding-right: 0;
+  }
+
+  .broadcasts__item:not(:nth-child(2n)) {
+    margin-right: var(--gap);
+  }
+
+  .broadcasts__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .guests__left {
+    max-width: 536px;
+  }
+
+  .guests__descr-bottom {
+    padding-right: 285px;
+  }
+
+  .guests__img {
+    max-width: 255px;
+  }
+
+  .playlists__container {
+    flex-direction: column;
+  }
+
+  .playlists__left-body {
+    max-width: 100%;
+  }
+
+  .check {
+    max-width: 600px;
+    column-count: 2;
+  }
+
+  .check__container {
+    white-space: nowrap;
+    max-width: fit-content;
+    justify-content: flex-start;
+  }
+
+  .left-body__text {
+    display: none;
+  }
+
+  .bottom-text {
+    display: block;
+  }
+
+  .playlists__flag {
+    left: 0;
+  }
+  
+  .playlists__item {
+    width: calc((100% - var(--gap) * 2) / 3);
+  }
+
+  .playlists__item:not(:nth-child(3n)) {
+    margin-right: var(--gap);
+  }
+
+  .playlists__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .playlists__link {
+    display: flex;
+  }
+
+  .playlists__text {
+    min-width: 143px;
+  }
+
+  .product {
+    padding-bottom: 94px;
+  }
+
+  .product__img {
+    max-width: 397px;
+  }
+
+  .product__logo {
+    max-width: 100px;
+    top: 100px;
+  }
+
+  .about-us__first-svg {
+    display: none;
+  }
+
+  .swiper__img {
+    width: 100%;
+  }
+}

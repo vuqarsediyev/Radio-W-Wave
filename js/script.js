@@ -49,6 +49,14 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 4,
     spaceBetween: 30,
     loop: true,
+    breakpoints: {
+      824: {
+        slidesPerView: 2,
+      },
+      1140: {
+        slidesPerView: 4,
+      }
+    },
 
     // Navigation arrows
     navigation: {
