@@ -916,6 +916,10 @@ body {
   opacity: 0.7;
 }
 
+.broadcasts__archive-bottom {
+  display: none;
+}
+
 
 /* GUests */
 
@@ -1662,6 +1666,10 @@ body {
   margin-right: var(--gap);
 }
 
+.abouts-us__spiral {
+  display: none;
+}
+
 .about-us__first-svg {
   width: 160px;
   min-height: 290px;
@@ -1907,6 +1915,13 @@ body {
   fill: var(--primary_shade);
 }
 
+.footer__line {
+  background-image: url(../img/footer-line.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10px;
+  width: 100%;
+}
 
 .footer__list {
   margin-bottom: 20px;
