@@ -63,7 +63,47 @@
           <button class="btn btn-reset login__btn">Вход</button>
         </div>
       </div>
-      <div class="header__bottom bottom-menu flex">
+      <div class="header__bottom first-accordion bottom-menu flex">
+        <div class="header__ac ac js-enabled">
+          <button class="btn-reset flex header__ac ac-trigger">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#6D31EE"/>
+              <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white"/>
+              <path d="M8 12.0001H7L7 3.00014L8 3.00014L8 12.0001Z" fill="white"/>
+            </svg>
+            <span class="header__ac-title">Что в эфире?</span>
+          </button>
+          <div class="header__ac-panel ac-panel">
+            <div class="header__ac-content">
+              <div class="bottom-menu__item flex">
+                <button class="btn-reset header__play-btn">
+                  <svg class="bottom-menu__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                  d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+                  fill="none" />
+                  </svg>
+                </button>
+                <a href="" class="bottom-menu__link">
+                <span>Ранее в эфире</span> &laquo;Музыка&raquo;
+                </a>
+              </div>
+              <div class="bottom-menu__item flex">
+                <button class="btn-reset header__play-btn">
+                  <svg class="bottom-menu__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                  d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+                  fill="none" />
+                </svg>
+                </button>
+                <a href="" class="bottom-menu__link">
+                  <span>Сейчас в эфире</span> &laquo;Как так?&raquo;
+                </a>
+             </div>
+            </div>
+          </div>
+        </div>
         <ul class="bottom-menu__list flex list-reset">
           <li class="bottom-menu__item"><a href="" class="bottom-menu__link">Новости</a></li>
           <li class="bottom-menu__item"><a href="" class="bottom-menu__link">Блоги</a></li>
@@ -136,7 +176,10 @@
         <ul class="podcasts__list list-reset flex">
           <li class="podcasts__item flex">
             <div class="podcasts__date">14 июня</div>
+            <picture>
+              <source srcset="img/podcasts-1-320.jpg" media="(max-width: 570px)">
             <img src="img/podcasts-1.jpg" alt="" class="podcasts__img">
+            </picture>
             <div class="podcasts__content">
               <div class="podcasts__top flex">
                 <div class="podcasts__text">
@@ -191,7 +234,10 @@
           </li>
           <li class="podcasts__item flex">
             <div class="podcasts__date">11 июня</div>
+            <picture>
+              <source srcset="img/podcasts-2-320.jpg" media="(max-width: 570px)">
             <img src="img/podcasts-2.jpg" alt="" class="podcasts__img">
+            </picture>
             <div class="podcasts__content">
               <div class="podcasts__top flex">
                 <div class="podcasts__text">
@@ -246,7 +292,10 @@
           </li>
           <li class="podcasts__item flex">
             <div class="podcasts__date">8 июня</div>
+            <picture>
+              <source srcset="img/podcasts-3-320.jpg" media="(max-width: 570px)">
             <img src="img/podcasts-3.jpg" alt="" class="podcasts__img">
+            </picture>
             <div class="podcasts__content">
               <div class="podcasts__top flex">
                 <div class="podcasts__text">
@@ -301,7 +350,10 @@
           </li>
           <li class="podcasts__item flex">
             <div class="podcasts__date">5 июня</div>
+            <picture>
+              <source srcset="img/podcasts-4-320.jpg" media="(max-width: 570px)">
             <img src="img/podcasts-4.jpg" alt="" class="podcasts__img">
+            </picture>
             <div class="podcasts__content">
               <div class="podcasts__top flex">
                 <div class="podcasts__text">
@@ -356,7 +408,10 @@
           </li>
           <li class="podcasts__item flex">
             <div class="podcasts__date">2 июня</div>
+            <picture>
+              <source srcset="img/podcasts-1-320.jpg" media="(max-width: 570px)">
             <img src="img/podcasts-5.jpg" alt="" class="podcasts__img">
+            </picture>
             <div class="podcasts__content">
               <div class="podcasts__top flex">
                 <div class="podcasts__text">
@@ -411,7 +466,10 @@
           </li>
           <li class="podcasts__item flex">
             <div class="podcasts__date">28 мая</div>
+            <picture>
+              <source srcset="img/podcasts-1-320.jpg" media="(max-width: 570px)">
             <img src="img/podcasts-6.jpg" alt="" class="podcasts__img">
+            </picture>
             <div class="podcasts__content">
               <div class="podcasts__top flex">
                 <div class="podcasts__text">
@@ -466,7 +524,10 @@
           </li>
           <li class="podcasts__item flex">
             <div class="podcasts__date">18 мая</div>
+            <picture>
+              <source srcset="img/podcasts-1-320.jpg" media="(max-width: 570px)">
             <img src="img/podcasts-7.jpg" alt="" class="podcasts__img">
+            </picture>
             <div class="podcasts__content">
               <div class="podcasts__top flex">
                 <div class="podcasts__text">
@@ -521,7 +582,10 @@
           </li>
           <li class="podcasts__item flex">
             <div class="podcasts__date">14 июня</div>
+            <picture>
+              <source srcset="img/podcasts-1-320.jpg" media="(max-width: 570px)">
             <img src="img/podcasts-8.jpg" alt="" class="podcasts__img">
+            </picture>
             <div class="podcasts__content">
               <div class="podcasts__top flex">
                 <div class="podcasts__text">

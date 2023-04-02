@@ -266,6 +266,9 @@ body {
   stroke: var(--primary);
 }
 
+.header__ac {
+  display: none;
+}
 
 .bottom-menu__list {
   align-items: center;
@@ -315,6 +318,10 @@ body {
   line-height: 12px;
   color: var(--text_gray);
   transition: color 0.3s ease-in-out;
+}
+
+.bottom-menu__play {
+  display: none;
 }
 
 .bottom-menu__link:focus-visible span {
@@ -960,7 +967,7 @@ body {
   color: var(--white);
 }
 
-.content {
+.header__ac-panel {
   height: 0px;
   overflow: hidden;
   color: #000000;

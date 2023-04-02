@@ -22,6 +22,7 @@ const choices = new Choices(element, {
 //Guest Accordion
 
 new Accordion('.js-accordion-container');
+new Accordion('.first-accordion');
 
 //Guests
 
@@ -74,12 +75,15 @@ const swiper = new Swiper('.swiper', {
 let burger = document.querySelector(".burger");
 let menu = document.querySelector('.header__nav');
 let menuLinks = document.querySelectorAll('.nav__link')
+let bottomMenu = document.querySelector('.bottom-menu__list')
 
 burger.addEventListener('click', function () {
 
     burger.classList.toggle('burger--active');
 
     menu.classList.toggle('header__nav--active');
+
+    bottomMenu.classList.toggle('bottom-menu__list--active')
 
     document.body.classList.toggle('stop-scroll')
 })
@@ -94,3 +98,14 @@ menuLinks.forEach(function (e) {
         document.body.classList.remove('stop-scroll')
     })
 })
+
+//
+let button = document.querySelector('.podcasts__btn');
+let item = document.querySelectorAll('.podcasts__item');
+
+
+button.addEventListener('click',  () => {
+
+  item.forEach(el => { el.classList.add('podcasts__item-visible')});
+
+});
