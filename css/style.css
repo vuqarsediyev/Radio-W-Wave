@@ -287,6 +287,8 @@ body {
 }
 
 .bottom-menu__link {
+  display: flex;
+  flex-direction: column;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -465,6 +467,10 @@ body {
   width: calc((100% - 30px) / 2);
   background-color: var(--white);
   margin-bottom: 30px;
+}
+
+.podcasts__img {
+  max-width: fit-content;
 }
 
 .podcasts__date {
@@ -704,6 +710,7 @@ body {
 }
 
 .broadcasts__item {
+  width: calc((100% - var(--gap) * 2) / 3);
   flex-direction: column;
   margin-bottom: 10px;
   transition: outline 0.3s ease-in-out;

@@ -51,6 +51,10 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 30,
     loop: true,
     breakpoints: {
+      286: {
+        spaceBetween: 20,
+        slidesPerView: 2,
+      },
       540: {
         slidesPerView: 2,
       },
@@ -100,11 +104,11 @@ menuLinks.forEach(function (e) {
 })
 
 //
-let button = document.querySelector('.podcasts__btn');
+let btn = document.querySelector('.podcasts__btn');
 let item = document.querySelectorAll('.podcasts__item');
 
 
-button.addEventListener('click',  () => {
+btn.addEventListener('click', () => {
 
   item.forEach(el => { el.classList.add('podcasts__item-visible')});
 
