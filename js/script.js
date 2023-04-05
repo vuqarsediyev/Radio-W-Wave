@@ -21,8 +21,8 @@ const choices = new Choices(element, {
 
 //Guest Accordion
 
-new Accordion('.js-accordion-container');
 new Accordion('.first-accordion');
+new Accordion('.js-accordion-container');
 
 //Guests
 

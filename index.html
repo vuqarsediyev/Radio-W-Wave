@@ -15,8 +15,9 @@
 
 <body>
   <header class="header">
-    <div class="header__img"><img src="img/logo.svg" alt="" class="header__logo-top"></div>
+    <div class="header__img"></div>
     <div class="container header__container">
+      <img src="img/logo.svg" alt="" class="header__logo-top">
       <div class="header__top flex">
         <button aria-label="Бургер меню" class="btn-reset burger">
           <span class="burger__line"></span>
@@ -111,7 +112,7 @@
           <li class="bottom-menu__item"><a href="" class="bottom-menu__link">Опросы</a></li>
           <li class="bottom-menu__item"><a href="" class="bottom-menu__link">Рейтинги</a></li>
           <li class="bottom-menu__item"><a href="" class="bottom-menu__link">Реклама</a></li>
-          <li class="bottom-menu__item flex">
+          <li class="bottom-menu__wrapper flex">
             <button class="btn-reset header__play-btn">
               <svg class="bottom-menu__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +125,7 @@
             <span>Ранее в эфире</span> &laquo;Музыка&raquo;
           </a>
         </li>
-        <li class="bottom-menu__item flex">
+        <li class="bottom-menu__wrapper second-wrapper flex">
           <button class="btn-reset header__play-btn">
             <svg class="bottom-menu__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -145,8 +146,8 @@
             fill="none" />
         </svg>
       </button>
-        </ul>
-        <img src="img/12+.jpg" alt="Контент для 12+ возрастное ограничение" class="bottom-menu__img">
+      </ul>
+      <img src="img/12+.jpg" alt="Контент для 12+ возрастное ограничение" class="bottom-menu__img">
       </div>
     </div>
   </header>
@@ -1128,7 +1129,7 @@
               <span class="checkmark"></span>
             </label>
 
-            <label class="check__container" tabindex="0">Электронная музыка
+            <label class="check__container" tabindex="0">Классическая музыка
               <input class="check-input" type="checkbox">
               <span class="checkmark"></span>
             </label>
@@ -1160,7 +1161,7 @@
                   <img src="img/russian-flag.jpg" alt="">
                 </div>
                 <picture>
-                  <source srcset="img/playlists-1-824.jpg" media="(max-width: 1140px)">
+                  <source srcset="img/playlists-1-824.jpg" media="(max-width: 1024px)">
                 <img src="img/playlists-1.jpg" alt="" class="playlists__img">
                 </picture>
                 <div class="playlists__text">
@@ -1414,32 +1415,56 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img src="img/about-us-1.jpg" alt="" class="swiper__img">
+              <picture>
+                <source srcset="img/about-us-1-1024.jpg" media="(max-width: 1024px)">
+                <img src="img/about-us-1.jpg" alt="" class="swiper__img">
+              </picture>
+              
               <h3 class="swiper__name">Дмитрий Гутенберг</h3>
               <p class="swiper__descr">Эксперт (ну, почти) по всем вопросам (почти)</p>
             </div>
             <div class="swiper-slide">
-              <img src="img/about-us-2.jpg" alt="" class="swiper__img">
+              <picture>
+                <source srcset="img/about-us-2-1024.jpg" media="(max-width: 1024px)">
+                <img src="img/about-us-2.jpg" alt="" class="swiper__img">
+              </picture>
+              
               <h3 class="swiper__name">Анна Васильева</h3>
               <p class="swiper__descr">Как я здесь оказалась? А главное — зачем?</p>
             </div>
             <div class="swiper-slide">
-              <img src="img/about-us-3.jpg" alt="" class="swiper__img">
+              <picture>
+                <source srcset="img/about-us-3-1024.jpg" media="(max-width: 1024px)">
+                <img src="img/about-us-3.jpg" alt="" class="swiper__img">
+              </picture>
+              
               <h3 class="swiper__name">Пётр Дмитриевский</h3>
               <p class="swiper__descr">Господа! Внимание! Благодарю за внимание!/p>
             </div>
             <div class="swiper-slide">
-              <img src="img/about-us-4.jpg" alt="" class="swiper__img">
+              <picture>
+                <source srcset="img/about-us-4-1024.jpg" media="(max-width: 1024px)">
+                <img src="img/about-us-4.jpg" alt="" class="swiper__img">
+              </picture>
+              
               <h3 class="swiper__name">Татьяна Флеганова</h3>
               <p class="swiper__descr">Одна я в пальто стою красивая, а вокруг…</p>
             </div>
             <div class="swiper-slide">
-              <img src="img/about-us-5.jpg" alt="" class="swiper__img">
+              <picture>
+                <source srcset="img/about-us-5-1024.jpg" media="(max-width: 1024px)">
+                <img src="img/about-us-5.jpg" alt="" class="swiper__img">
+              </picture>
+              
               <h3 class="swiper__name">Фёдор Прокопьев</h3>
               <p class="swiper__descr">Привет! Я фотограф, музыкант, ведущий</p>
             </div>
             <div class="swiper-slide">
-              <img src="img/about-us-6.jpg" alt="" class="swiper__img">
+              <picture>
+                <source srcset="img/about-us-6-1024.jpg" media="(max-width: 1024px)">
+                <img src="img/about-us-6.jpg" alt="" class="swiper__img">
+              </picture>
+              
               <h3 class="swiper__name">Светлана Кортнева</h3>
               <p class="swiper__descr">Художник-оформитель. Оформляю</p>
             </div>
