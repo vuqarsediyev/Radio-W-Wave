@@ -119,6 +119,7 @@ body {
 }
 
 .header__top {
+  position: relative;
   align-items: center;
 }
 
@@ -207,7 +208,7 @@ body {
 }
 
 .searchbar--hide {
-  display: none;
+  visibility: hidden;
 }
 
 .searchbar:focus-visible {
@@ -229,22 +230,24 @@ body {
   stroke: var(--primary_shade);
 }
 
-.header__wrapper {
-  position: relative;
-}
-
 .header__form {
+  visibility: hidden;
   position: absolute;
-  top: -11px;
-  right: 0;
-  display: none;
+  padding: 5px 10px;
+  background-color: var(--white);
+  top: 22px;
+  right: 120px;
 }
 
 .searchbar-input {
+  margin-right: 5px;
+  padding: 0;
+  padding-top: 5px;
   border: none;
   height: 100%;
   border-bottom: 1px solid var(--primary);
   transition: outline 0.3s ease-in-out;
+  transition: visibility 0.3s ease-in-out;
 }
 
 .searchbar-input:focus-visible {
@@ -259,7 +262,7 @@ body {
 }
 
 .header__form--active {
-  display: flex;
+  visibility: visible;
 }
 
 .searchbar__icon path {
@@ -422,16 +425,14 @@ body {
 }
 
 .hero__right {
+  width: 100%;
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.hero__img {
-  max-width: 350px;
-  padding-top: 30px;
-  padding-bottom: 40px;
-
 }
 
 /*Podcasts*/
@@ -447,8 +448,6 @@ body {
   align-items: center;
 }
 
-
-
 .podcasts__title {
   margin: 0;
   margin-right: auto;
@@ -461,7 +460,6 @@ body {
 
 .podcasts__item {
   cursor: pointer;
-  max-height: 140px;
   font-size: 0;
   position: relative;
   width: calc((100% - 30px) / 2);
@@ -470,7 +468,7 @@ body {
 }
 
 .podcasts__img {
-  max-width: fit-content;
+  min-height: -webkit-fill-available;
 }
 
 .podcasts__date {
@@ -496,14 +494,17 @@ body {
 }
 
 .podcasts__top {
+  width: 100%;
   justify-content: space-between;
   padding: 24px 33px 24px 30px;
   margin-right: auto;
 }
 
 .podcasts__content {
+  display: flex;
   width: 100%;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .podcasts__text {
@@ -548,7 +549,7 @@ body {
 
 .podcasts__play circle {
   stroke: var(--text_gray);
-  transition: stroke 0.3s ease-in-out;
+  transition: stroke 0.3s ease-in-out, fill 0.3s ease-in-out;
 }
 
 .podcasts__play path {
@@ -577,11 +578,11 @@ body {
 }
 
 .podcasts__item:active .podcasts__play circle {
-  stroke: var(--primary_shade);
+  fill: var(--primary_shade);
 }
 
 .podcasts__item:active .podcasts__play path {
-  fill: var(--primary_shade);
+  fill: var(--white);
 }
 
 .podcasts__bottom {
@@ -838,7 +839,7 @@ body {
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted,
 .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
-  background-color: #F5F6F7;
+  background-color: var(--primary_light);
 }
 
 .choices[data-type*=select-one].is-open::after {
@@ -854,9 +855,11 @@ body {
 
 .broadcasts__img {
   padding-top: 13px;
+  transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out  ;
 }
 
 .broadcasts__text {
+  height: 100%;
   padding: 20px 16px;
   border: 1px solid #E6E8EC;
 }
@@ -884,7 +887,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: var(--black)
+  color: var(--black);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
 .broadcasts__link path {
@@ -989,8 +993,12 @@ body {
   padding: 27px 0;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-  transition-delay: 0.3s;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.content.ac-panel {
+  height: 0;
+  max-height: 203px;
 }
 
 .is-active .content-wrap {
@@ -1137,6 +1145,11 @@ body {
 
 .guests__item:active,
 .guests__item:active+.guests__item {
+  border-top-color: var(--primary_light);
+}
+
+.guests__item.is-active,
+.guests__item.is-active+.guests__item {
   border-top-color: var(--primary_light);
 }
 
@@ -1773,7 +1786,8 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
-  color: var(--white)
+  color: var(--white);
+  transition: border 0.3s ease-in-out,  background-color 0.3s ease-in-out;
 }
 
 .about-us__textarea:focus-visible {
@@ -1811,7 +1825,8 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
-  color: var(--white)
+  color: var(--white);
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .about-us__input:focus-visible {
@@ -1839,6 +1854,21 @@ body {
   line-height: 20px;
   color: var(--white);
   border-radius: 40px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about-us__btn:focus-visible {
+  outline: none;
+  outline: 2px solid var(--primary_shade);
+  background-color: var(--primary_light);
+}
+
+.about-us__btn:hover {
+  background-color: var(--primary_light);
+}
+
+.about-us__btn:active {
+  background-color: var(--primary_shade);
 }
 
 .about-us__check {
@@ -1908,27 +1938,43 @@ body {
   font-size: 16px;
   line-height: 16px;
   color: #FFFFFF;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.footer__link path {
+.footer__link:focus-visible {
+  outline: none;
+  padding: 4px 10px;
+  background-color: var(--primary_light);
+  color: var(--white);
+}
+
+.footer__link:hover {
+  color: var(--primary);
+}
+
+.footer__link:active {
+  color: var(--primary_shade);
+}
+
+.footer__social path {
   fill:  var(--shade_gray);
   transition: fill 0.3s ease-in-out;
 }
 
-.footer__link:focus-visible  {
+.footer__social:focus-visible  {
   outline: none;
 }
 
-.footer__link:focus-visible path {
+.footer__social:focus-visible path {
   outline: none;
   fill: var(--primary_light);
 }
 
-.footer__link:hover path {
+.footer__social:hover path {
   fill: var(--primary);
 }
 
-.footer__link:active path {
+.footer__social:active path {
   fill: var(--primary_shade);
 }
 

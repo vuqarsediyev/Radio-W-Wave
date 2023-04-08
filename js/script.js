@@ -2,9 +2,10 @@
 const searchbarBtn = document.querySelector('.searchbar');
 const searchForm = document.querySelector('.header__form');
 
-searchbarBtn.addEventListener('click', function() {
+searchbarBtn.addEventListener('click', function(e) {
   searchForm.classList.toggle('header__form--active');
-  searchbarBtn.classList.toggle('searchbar--hide');
+  searchbarBtn.classList.add('searchbar--hide');
+  e.preventDefault();
 })
 
 
@@ -21,8 +22,8 @@ const choices = new Choices(element, {
 
 //Guest Accordion
 
-new Accordion('.first-accordion');
 new Accordion('.js-accordion-container');
+new Accordion('.first-accordion');
 
 //Guests
 
