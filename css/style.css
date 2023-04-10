@@ -715,6 +715,7 @@ body {
 }
 
 .broadcasts__item {
+  font-size: 0;
   width: calc((100% - var(--gap) * 2) / 3);
   flex-direction: column;
   margin-bottom: 10px;
@@ -856,6 +857,7 @@ body {
 
 
 .broadcasts__img {
+  width: 100%;
   padding-top: 13px;
   transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out  ;
 }

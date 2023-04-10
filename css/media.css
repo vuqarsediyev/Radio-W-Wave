@@ -948,7 +948,26 @@
 }
 
 .podcasts__top {
-  padding: 16px 10px 16px 16px;
+  padding: 16px 15px 16px 16px;
+}
+
+.podcasts__play svg {
+  width: 37px;
+  height: 36px;
+}
+
+.podcasts-count {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.podcasts__play circle {
+  stroke: #6D31EE;
+}
+
+.podcasts__play path {
+  fill: #6D31EE;
 }
 
 .podcasts__date {
@@ -958,19 +977,19 @@
 }
 
 .podcasts__bottom {
-  padding: 6px 17px;
+  padding: 7px 17px 6px 34px;
 }
 
 .podcasts__btn {
   min-width: 170px;
-  padding: 17px 30px;
+  padding: 15px 28px;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
 }
 
 .podcasts__list {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .broadcasts__title {
@@ -986,12 +1005,16 @@
 }
 
 .broadcasts__list {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .broadcasts__item {
-  margin-bottom: 0;
+  margin-bottom: 29px;
   max-width: calc((100% - 30px) / 2);
+}
+
+.broadcasts__left-body {
+  margin-bottom: 28px;
 }
 
 .broadcasts__item:not(:nth-child(2n)) {
@@ -1020,6 +1043,14 @@
   line-height: 12px;
 }
 
+.broadcasts__author {
+  margin-right: 0;
+}
+
+.broadcasts__img {
+  padding-top: 0px;
+}
+
 .broadcasts__text {
   position: relative;
   height: 100px;
@@ -1045,8 +1076,15 @@
   flex-direction: column-reverse;
 }
 
+.broadcasts {
+  padding-bottom: 18px;
+}
+
 .broadcasts__mic {
+  height: 105px;
+  width: 78px;
   margin-right: 13px;
+  margin-bottom: 10px;
 }
 
 .guests__title {
@@ -1057,6 +1095,7 @@
 }
 
 .guests__descr-top {
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 150%;
@@ -1072,7 +1111,7 @@
 }
 
 .guests__descr-bottom {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   padding-right: 0;
   font-weight: 400;
   font-size: 14px;
@@ -1082,6 +1121,88 @@
 .guests-svg {
   width: 30px;
   height: 30px;
+}
+
+.guests__top {
+  padding: 0;
+}
+
+.guests__list {
+  margin-bottom: 30px;
+}
+
+.guests__img {
+  margin-bottom: 6px;
+}
+
+.guests__about {
+  padding-right: 0;
+  margin-bottom: 29px;
+}
+
+.social__link svg {
+  width: 36px;
+  height: 36px;
+}
+
+.guests__btn {
+  max-width: 150px;
+  padding: 8px 11.5px;
+}
+
+.check__container {
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 0;
+  color: #6D31EE;
+  margin-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.check__container:not(:last-child) {
+  margin-bottom: 0; 
+}
+
+.check__container:last-child {
+  margin-bottom: 0; 
+}
+
+.check__container .checkmark {
+  height: 36px;
+  width: 100%;
+  border-radius: 77px;
+  border: 2px solid #6D31EE;
+}
+
+.check {
+  height: 37px;
+  max-width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.check__title {
+  margin-bottom: 6px;
+}
+
+.check__container .check-input:checked~.checkmark  {
+  background-image: none;
+  background-color: #6D31EE;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 21px;
+}
+
+.social__list {
+  margin-bottom: 9px;
+}
+
+.content.ac-panel {
+  max-height: 490px;
 }
 
 .guests__left {
@@ -1121,16 +1242,20 @@
   line-height: 12px;
 }
 
-.check {
-  display: none;
-}
-
 .playlists__link {
   flex-direction: column;
 }
 
+.playlists__left-body {
+  margin-bottom: 28px;
+}
+
+.playlists__list {
+  margin-bottom: 8px;
+}
+
 .playlists__text {
-  padding: 10px;
+  padding: 9px 10px 7px 10px;
   min-width: 100%;
 }
 
