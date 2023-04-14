@@ -218,6 +218,7 @@
 
   .playlists__link {
     display: flex;
+    flex-direction: row;
   }
 
   .playlists__img {
@@ -710,6 +711,10 @@
 
 }
 
+.playlists__img {
+  width: 100%;
+}
+
 .swiper-button-next {
   top: var(--swiper-navigation-top-offset, 46.3%);
 }
@@ -795,8 +800,15 @@
     top: 104px;
   }
 
+  .header__form {
+    top: 7px;
+    right: 0;
+}
+
   .header__ac {
-   padding: 2px 35px;
+    max-width: 256px;
+    margin: 0 auto;
+    padding: 2px 25px;
     display: block;
   }
 
@@ -1247,6 +1259,8 @@
 }
 
 .playlists__left-body {
+  min-width: 100%;
+  margin-right: 0;
   margin-bottom: 28px;
 }
 
@@ -1404,7 +1418,12 @@
 }
 
 .about-us__input {
+  margin-right: 0;
   padding: 15px 22px;
+}
+
+.about-us__input:not(:last-child) {
+  margin-right: 0;
 }
 
 .about-us__input::placeholder {
