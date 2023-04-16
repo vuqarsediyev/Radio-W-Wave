@@ -1503,11 +1503,17 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
-        <form action="#" class="about-us__form flex">
-          <textarea class="about-us__textarea" cols="30" rows="10" placeholder="Что скажете?"></textarea>
-          <div class="about-us__inputs flex">
-            <input class="about-us__input" placeholder="Имя" name="name" type="text">
-            <input class="about-us__input" placeholder="Email" type="email" name="email">
+        <form id="my-form" class="about-us__form flex">
+          <label class="textarea-form" for="textarea">
+            <textarea id="form-textarea" class="about-us__textarea" cols="30" rows="10" placeholder="Что скажете?"></textarea>
+          </label>
+          <div id="input-form" class="about-us__inputs flex">
+            <label for="name">
+              <input id="basic-name" class="about-us__input" autocomplete="off" placeholder="Имя" name="name" type="text">
+            </label>
+            <label for="email">
+              <input id="basic-email" class="about-us__input" autocomplete="off" placeholder="Email" type="email" name="email">
+            </label>
           </div>
           <button class="btn-reset about-us__btn" type="submit">Отправить</button>
           <label class="about-us__check">Согласен на обработку персональных данных
@@ -1570,6 +1576,7 @@
       <p class="footer__descr">W-WAVE ® 2021</p>
     </div>
   </footer>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>

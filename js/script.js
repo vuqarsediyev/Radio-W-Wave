@@ -114,3 +114,34 @@ btn.addEventListener('click', () => {
   item.forEach(el => { el.classList.add('podcasts__item-visible')});
 
 });
+
+//Just validate about-us section
+const validator = new JustValidate('#my-form');
+
+validator
+  
+  .addField('#basic-name', [
+    {
+      rule: 'required',
+      errorMessage: 'Ошибка',
+    },
+    {
+      rule: 'customRegexp',
+      value: /[a-z]/gi,
+      errorMessage: 'Заполните текстом',
+    },
+
+  ])
+  .addField('#basic-email', [
+    {
+      rule: 'required',
+      errorMessage: 'Ошибка',
+    },
+    {
+      rule: 'required',
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Ошибка',
+    },
+  ])

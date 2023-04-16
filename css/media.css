@@ -697,14 +697,6 @@
   background-size: cover;
 }
 
-.about-us__inputs {
-  flex-direction: column;
-}
-
-.about-us__input {
-  width: 100%;
-}
-
 .footer__social svg{
   width: 32px;
   height: 32px;
@@ -1422,7 +1414,11 @@
   padding: 15px 22px;
 }
 
-.about-us__input:not(:last-child) {
+.about-us__inputs label {
+  width: 100%;
+}
+
+.about-us__inputs label:first-child {
   margin-right: 0;
 }
 
@@ -1453,6 +1449,18 @@
   line-height: 16px;
 }
 
+.just-validate-error-label {
+  font-size: 12px;
+  top: 7px;
+  left: 23px;
+}
+
+
+.about-us__inputs {
+  flex-direction: column;
+}
+
+
 .swiper__img {
   width: 113px;
   margin-bottom: 7px;
@@ -1471,7 +1479,7 @@
 .footer__nav {
   column-count: 2;
   column-gap: 30px;
-  width: 258px;
+  max-width: 258px;
 }
 
 .footer__list {

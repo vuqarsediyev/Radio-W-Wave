@@ -375,10 +375,6 @@ body {
 
 /*Hero*/
 
-.hero__content {
-  max-width: 635px;
-}
-
 .hero__title {
   margin: 0;
   margin-bottom: 14px;
@@ -1785,6 +1781,7 @@ body {
 }
 
 .about-us__textarea {
+  width: 100%;
   resize: none;
   margin-bottom: var(--gap);
   max-height: 150px;
@@ -1824,8 +1821,21 @@ body {
   color: #A1A6B4;
 }
 
-.about-us__input {
+.about-us__inputs label {
+  position: relative;
   width: calc((100% - var(--gap)) / 2);
+}
+
+.about-us__inputs label:first-child {
+  margin-right: var(--gap);
+}
+
+.abouts-us__inputs {
+  width: 100%;
+}
+
+.about-us__input {
+  width: 100%;
   margin-bottom: var(--gap);
   padding: 25px 32px;
   border-radius: 30px;
@@ -1849,8 +1859,17 @@ body {
   background-color: var(--light_black);
 }
 
-.about-us__input:not(:last-child) {
-  margin-right: var(--gap);
+.just-validate-error-label {
+  font-size: 12px;
+  position: absolute;
+  top: 9px;
+  left: 32px;
+  color: #D52B1E;
+}
+
+.just-validate-error-field {
+  background-color: var(--black);
+  border-color: #D52B1E;
 }
 
 .about-us__btn {
