@@ -3,12 +3,20 @@ const searchbarBtn = document.querySelector('.searchbar');
 const searchForm = document.querySelector('.header__form');
 
 searchbarBtn.addEventListener('click', function(e) {
-  searchForm.classList.toggle('header__form--active');
-  searchbarBtn.classList.add('searchbar--hide');
+  searchForm.classList.add('header__form--active');
   e.preventDefault();
+  
 })
 
-
+document.addEventListener('click', function(event) {
+  // Проверяем, был ли клик выполнен внутри элемента поисковой строки
+  const isClickInsideSearchbar = searchbarBtn.contains(event.target);
+  const isClickInsideSearchForm = searchForm.contains(event.target);
+  // Если клик был выполнен вне элемента поисковой строки, удаляем класс header__form--active
+  if (!isClickInsideSearchbar && !isClickInsideSearchForm) {
+    searchForm.classList.remove('header__form--active');
+  }
+});
 //
 
 const element = document.querySelector('.broadcasts__select');
@@ -52,7 +60,7 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 30,
     loop: true,
     breakpoints: {
-      376: {
+      320: {
         spaceBetween: 14,
         slidesPerView: 2,
       },
@@ -61,9 +69,11 @@ const swiper = new Swiper('.swiper', {
       },
       824: {
         slidesPerView: 2,
+        spaceBetween: 22,
       },
       1140: {
         slidesPerView: 4,
+        spaceBetween: 28,
       }
     },
 
